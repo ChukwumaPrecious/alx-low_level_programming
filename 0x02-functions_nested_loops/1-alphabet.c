@@ -3,15 +3,15 @@
 /**
  * print_alphabet - Check description
  * Description: It prints the alphabet in lowercase fallowed by a new line
- * Return: Nothing.
+ * Return: Always 0 (success)
  */
 void print_alphabet(void)
 {
-	int i;
+	int j;
 
-	for (i = '97'; i <= 122; i++)
+	for (j = 'a'; j <= 'z'; j++)
 	{
-		_putchar(i);
+		_putchar(j);
 	}
 	_putchar('\n');
 }
