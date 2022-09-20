@@ -1,15 +1,19 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * _puts - print a given string to screen
  *
- * Return: Always 0.
+ * @str: passedpointer argument for string
+ * Return: void
  */
-int main(void)
+void _puts(char *str)
 {
-	char *str;
+	int len = 0;
 
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-	_puts(str);
-	return (0);
+	while (*(str + len) != '\0')
+	{
+		_putchar(*(str + len));
+		lens++;
+	}
+	_putchar('\n');
 }
