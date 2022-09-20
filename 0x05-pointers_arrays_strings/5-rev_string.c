@@ -2,9 +2,7 @@
 
 /**
  * rev_string - a function that reverse a string
- * followed by a new line.
- * @s: an input string
- *
+ * @s: passed pointer argument for string
  * Return: void
  */
 void rev_string(char *s)
@@ -18,10 +16,11 @@ void rev_string(char *s)
 	}
 	length = len;
 	len--;
-	for (i = 0; i < length / 2; i++)	
+	for (i = 0; i < length / 2; i++)
 	{
 		c = *(s + i);
-		*(s + i) = *(s + len);								*(s + i) = c;
+		*(s + i) = *(s + len);
+		*(s + len) = c;
 		len--;
 	}
 }
